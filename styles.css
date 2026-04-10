@@ -420,6 +420,17 @@ section[id] {
   border-color: var(--clr-primary);
 }
 
+.cta-banner .btn--secondary-light {
+  color: var(--clr-white);
+  border-color: var(--clr-on-primary-border);
+}
+
+.cta-banner .btn--secondary-light:hover {
+  background: var(--clr-on-primary-hover);
+  color: var(--clr-white);
+  border-color: var(--clr-white);
+}
+
 [data-theme="dark"] .btn--secondary-light {
   color: var(--clr-white);
   border-color: var(--clr-on-primary-text);
