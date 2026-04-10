@@ -324,9 +324,9 @@ section[id] {
 }
 
 .theme-toggle svg:first-of-type { display: none; }
-.theme-toggle svg:last-of-type { display: none; }
+.theme-toggle svg:last-of-type  { display: block; }
 [data-theme="dark"] .theme-toggle svg:first-of-type { display: block; }
-[data-theme="dark"] .theme-toggle svg:last-of-type { display: block; }
+[data-theme="dark"] .theme-toggle svg:last-of-type  { display: none; }
 /* === BUTTONS === */
 .btn {
   display: inline-flex;
