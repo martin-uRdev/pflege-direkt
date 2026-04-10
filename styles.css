@@ -323,11 +323,10 @@ section[id] {
   border-color: rgba(255,255,255,0.5);
 }
 
-.theme-toggle [data-lucide="sun"] { display: none; }
-.theme-toggle [data-lucide="moon"] { display: block; }
-[data-theme="dark"] .theme-toggle [data-lucide="sun"] { display: block; }
-[data-theme="dark"] .theme-toggle [data-lucide="moon"] { display: none; }
-
+.theme-toggle svg:first-of-type { display: none; }
+.theme-toggle svg:last-of-type { display: none; }
+[data-theme="dark"] .theme-toggle svg:first-of-type { display: block; }
+[data-theme="dark"] .theme-toggle svg:last-of-type { display: block; }
 /* === BUTTONS === */
 .btn {
   display: inline-flex;
