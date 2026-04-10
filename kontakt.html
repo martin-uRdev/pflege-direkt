@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="de">
+<script>!function(){var t=localStorage.getItem("pflege-direkt-theme")||"light";document.documentElement.setAttribute("data-theme",t)}();</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pflege Direkt – Kontakt. Jetzt qualifizierte Pflegekräfte für Ihre Einrichtung in Wien anfragen." />
+  <title>Kontakt – Pflege Direkt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <header>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">Pflege<span>Direkt</span></a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Startseite</a></li>
+          <li><a href="ueber-uns.html" class="nav__link">Über uns</a></li>
+          <li><a href="leistungen.html" class="nav__link">Leistungen</a></li>
+          <li><a href="kontakt.html" class="nav__link nav__link--active">Kontakt</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <button class="theme-toggle nav__desktop-cta" aria-label="Farbschema wechseln">
+            <i data-lucide="moon" width="18" height="18"></i>
+            <i data-lucide="sun" width="18" height="18"></i>
+          </button>
+          <a href="kontakt.html" class="btn btn--primary nav__desktop-cta">Jetzt anfragen</a>
+          <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+            <i data-lucide="menu" width="22" height="22"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="nav__mobile" role="menu">
+        <a href="index.html" class="nav__mobile-link" role="menuitem">Startseite</a>
+        <a href="ueber-uns.html" class="nav__mobile-link" role="menuitem">Über uns</a>
+        <a href="leistungen.html" class="nav__mobile-link" role="menuitem">Leistungen</a>
+        <a href="kontakt.html" class="nav__mobile-link" role="menuitem">Kontakt</a>
+        <div style="display:flex;gap:var(--space-3);align-items:center;padding-top:var(--space-3);">
+          <button class="theme-toggle" aria-label="Farbschema wechseln">
+            <i data-lucide="moon" width="18" height="18"></i>
+            <i data-lucide="sun" width="18" height="18"></i>
+          </button>
+          <a href="kontakt.html" class="btn btn--primary nav__mobile-cta">Jetzt anfragen</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── URGENCY STRIP ──────────────────────────────────── -->
+    <div class="urgency-strip" role="alert" aria-live="polite">
+      <div class="urgency-strip__inner">
+        <i data-lucide="phone-call" width="20" height="20"></i>
+        <p class="urgency-strip__text">Dringender Bedarf? Rufen Sie uns jetzt an: <strong>+43 1 234 56 78</strong> — 24 Stunden erreichbar</p>
+        <a href="tel:+431234567" class="btn btn--primary" style="flex-shrink:0;">
+          <i data-lucide="phone" width="16" height="16"></i>
+          Jetzt anrufen
+        </a>
+      </div>
+    </div>
+
+    <!-- ── PAGE HERO ─────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__inner">
+        <p class="hero__eyebrow" style="margin-bottom:var(--space-4);">
+          <i data-lucide="mail" width="14" height="14"></i>
+          Kontakt
+        </p>
+        <h1 class="page-hero__title" id="page-title">Kontakt aufnehmen</h1>
+        <p class="page-hero__subtitle">Schildern Sie uns Ihren Bedarf – wir melden uns in der Regel innerhalb einer Stunde bei Ihnen zurück.</p>
+      </div>
+    </section>
+
+    <!-- ── CONTACT LAYOUT ─────────────────────────────────── -->
+    <section class="contact-layout" id="kontaktformular" aria-labelledby="form-title">
+      <div class="container">
+        <div class="grid-2" style="gap:var(--space-10);">
+
+          <!-- LEFT: FORM -->
+          <div>
+            <div class="contact-form-section">
+              <h2 class="contact-form-section__title" id="form-title">Anfrage stellen</h2>
+
+              <!-- FORM (div-based, no <form> element) -->
+              <div id="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-group__label" for="einrichtungsname">Einrichtungsname *</label>
+                    <input
+                      class="form-group__input"
+                      type="text"
+                      id="einrichtungsname"
+                      name="einrichtungsname"
+                      placeholder="z.B. Seniorenheim Favoriten"
+                      required
+                      autocomplete="organization"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-group__label" for="ansprechpartner">Ansprechpartner *</label>
+                    <input
+                      class="form-group__input"
+                      type="text"
+                      id="ansprechpartner"
+                      name="ansprechpartner"
+                      placeholder="Vor- und Nachname"
+                      required
+                      autocomplete="name"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-group__label" for="email">E-Mail *</label>
+                    <input
+                      class="form-group__input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="name@einrichtung.at"
+                      required
+                      autocomplete="email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-group__label" for="telefon">Telefon</label>
+                    <input
+                      class="form-group__input"
+                      type="tel"
+                      id="telefon"
+                      name="telefon"
+                      placeholder="+43 1 ..."
+                      autocomplete="tel"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-group__label" for="qualifikation">Qualifikation benötigt *</label>
+                    <select class="form-group__select" id="qualifikation" name="qualifikation" required>
+                      <option value="" disabled selected>Bitte wählen…</option>
+                      <option value="DGKP">DGKP – Dipl. Gesundheits- und Krankenpfleger/in</option>
+                      <option value="PFA">PFA – Pflegefachassistenz</option>
+                      <option value="PA">PA – Pflegeassistenz</option>
+                      <option value="HH">HH – Heimhilfe</option>
+                      <option value="Sonstige">Sonstige / Mehrere</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-group__label" for="einsatzbeginn">Einsatzbeginn</label>
+                    <input
+                      class="form-group__input"
+                      type="date"
+                      id="einsatzbeginn"
+                      name="einsatzbeginn"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-group__label" for="nachricht">Nachricht *</label>
+                  <textarea
+                    class="form-group__textarea"
+                    id="nachricht"
+                    name="nachricht"
+                    placeholder="Kurze Beschreibung Ihres Bedarfs – Einsatzdauer, Schichten, besondere Anforderungen…"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="button" id="form-submit" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;">
+                  <i data-lucide="send" width="18" height="18"></i>
+                  Anfrage absenden
+                </button>
+
+                <p style="font-size:var(--text-xs);color:var(--clr-text-muted);margin-top:var(--space-3);max-width:none;">* Pflichtfelder. Wir antworten in der Regel innerhalb einer Stunde.</p>
+              </div>
+
+              <!-- SUCCESS STATE -->
+              <div id="form-success" class="form-success" role="status" aria-live="polite">
+                <div class="form-success__icon">
+                  <i data-lucide="check-circle-2" width="28" height="28"></i>
+                </div>
+                <h3 class="form-success__title">Anfrage erhalten!</h3>
+                <p class="form-success__body">Vielen Dank. Wir haben Ihre Anfrage erhalten und melden uns in Kürze bei Ihnen. Bei dringendem Bedarf rufen Sie uns bitte direkt an: <strong>+43 1 234 56 78</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: CONTACT INFO -->
+          <div class="contact-info-section">
+
+            <div class="contact-info-card">
+              <h2 class="contact-info-card__title">Direktkontakt</h2>
+
+              <div class="contact-info-card__item">
+                <div class="contact-info-card__item-icon">
+                  <i data-lucide="phone" width="18" height="18"></i>
+                </div>
+                <div>
+                  <span class="contact-info-card__item-label">Telefon</span>
+                  <a href="tel:+43123456" style="font-size:var(--text-l);font-weight:600;color:var(--clr-heading);">+43 1 234 56 78</a>
+                  <p style="font-size:var(--text-s);color:var(--clr-text-muted);max-width:none;margin-top:var(--space-1);">Mo–Fr 8–18 Uhr, Notfall 24/7</p>
+                </div>
+              </div>
+
+              <div class="contact-info-card__item">
+                <div class="contact-info-card__item-icon">
+                  <i data-lucide="mail" width="18" height="18"></i>
+                </div>
+                <div>
+                  <span class="contact-info-card__item-label">E-Mail</span>
+                  <a href="/cdn-cgi/l/email-protection#2e414848474d4b6e5e48424b494b034a475c4b455a004f5a" style="font-size:var(--text-m);color:var(--clr-heading);"><span class="__cf_email__" data-cfemail="234c45454a40466353454f4644460e474a514648570d4257">[email&#160;protected]</span></a>
+                </div>
+              </div>
+
+              <div class="contact-info-card__item">
+                <div class="contact-info-card__item-icon">
+                  <i data-lucide="map-pin" width="18" height="18"></i>
+                </div>
+                <div>
+                  <span class="contact-info-card__item-label">Adresse</span>
+                  <p style="font-size:var(--text-m);color:var(--clr-heading);max-width:none;">Mariahilfer Straße 44<br>1070 Wien, Österreich</p>
+                </div>
+              </div>
+
+              <div class="contact-info-card__item">
+                <div class="contact-info-card__item-icon">
+                  <i data-lucide="clock" width="18" height="18"></i>
+                </div>
+                <div>
+                  <span class="contact-info-card__item-label">Bürozeiten</span>
+                  <p style="font-size:var(--text-m);color:var(--clr-heading);max-width:none;">Montag – Freitag<br>08:00 – 18:00 Uhr</p>
+                  <p style="font-size:var(--text-s);color:var(--clr-text-muted);max-width:none;margin-top:var(--space-1);">Notfalltelefon: rund um die Uhr</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- MAP PLACEHOLDER -->
+            <div class="map-placeholder" role="img" aria-label="Kartenansicht – Mariahilfer Straße 44, 1070 Wien">
+              <i data-lucide="map" width="32" height="32"></i>
+              <p style="font-size:var(--text-s);color:var(--clr-text-muted);max-width:none;text-align:center;">Mariahilfer Straße 44, 1070 Wien</p>
+            </div>
+
+            <!-- RESPONSE TIME NOTE -->
+            <div class="card" style="padding:var(--space-5);">
+              <div style="display:flex;align-items:flex-start;gap:var(--space-3);">
+                <div style="width:2.5rem;height:2.5rem;background:var(--clr-bg-alt);border-radius:var(--radius-m);display:flex;align-items:center;justify-content:center;color:var(--clr-accent);flex-shrink:0;">
+                  <i data-lucide="timer" width="18" height="18"></i>
+                </div>
+                <div>
+                  <p style="font-family:var(--ff-heading);font-weight:700;font-size:var(--text-m);color:var(--clr-heading);max-width:none;margin-bottom:var(--space-1);">Reaktionszeit</p>
+                  <p style="font-size:var(--text-s);color:var(--clr-text-muted);max-width:none;">Bei Soforteinsätzen reagieren wir innerhalb von <strong>2 Stunden</strong>. Auf E-Mail-Anfragen antworten wir in der Regel noch am selben Werktag.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Seitenfu&szlig;">
+    <div class="footer__inner">
+      <div>
+        <a href="index.html" class="footer__logo">Pflege<span>Direkt</span></a>
+        <p class="footer__tagline">Geprüfte Pflegekräfte für soziale Einrichtungen in Wien. Schnell, zuverlässig, professionell.</p>
+      </div>
+
+      <nav aria-label="Footer Navigation">
+        <p class="footer__heading">Navigation</p>
+        <ul class="footer__links" role="list">
+          <li><a href="index.html" class="footer__link">Startseite</a></li>
+          <li><a href="ueber-uns.html" class="footer__link">Über uns</a></li>
+          <li><a href="leistungen.html" class="footer__link">Leistungen</a></li>
+          <li><a href="kontakt.html" class="footer__link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer__heading">Kontakt</p>
+        <div class="footer__contact-item">
+          <i data-lucide="map-pin" width="16" height="16"></i>
+          <span>Mariahilfer Straße 44, 1070 Wien</span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="phone" width="16" height="16"></i>
+          <span>+43 1 234 56 78</span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="mail" width="16" height="16"></i>
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="69060f0f000a0c29190f050c0e0c440d001b0c021d47081d">[email&#160;protected]</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="clock" width="16" height="16"></i>
+          <span>Mo–Fr 8–18 Uhr · Notfall: 24/7</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2025 Pfle

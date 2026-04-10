@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="de">
+<script>!function(){var t=localStorage.getItem("pflege-direkt-theme")||"light";document.documentElement.setAttribute("data-theme",t)}();</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pflege Direkt – Leistungen. Soforteinsatz, Langzeitplanung und 24/7-Erreichbarkeit für qualifiziertes Pflegepersonal in Wien." />
+  <title>Leistungen – Pflege Direkt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <header>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">Pflege<span>Direkt</span></a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Startseite</a></li>
+          <li><a href="ueber-uns.html" class="nav__link">Über uns</a></li>
+          <li><a href="leistungen.html" class="nav__link nav__link--active">Leistungen</a></li>
+          <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <button class="theme-toggle nav__desktop-cta" aria-label="Farbschema wechseln">
+            <i data-lucide="moon" width="18" height="18"></i>
+            <i data-lucide="sun" width="18" height="18"></i>
+          </button>
+          <a href="kontakt.html" class="btn btn--primary nav__desktop-cta">Jetzt anfragen</a>
+          <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+            <i data-lucide="menu" width="22" height="22"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="nav__mobile" role="menu">
+        <a href="index.html" class="nav__mobile-link" role="menuitem">Startseite</a>
+        <a href="ueber-uns.html" class="nav__mobile-link" role="menuitem">Über uns</a>
+        <a href="leistungen.html" class="nav__mobile-link" role="menuitem">Leistungen</a>
+        <a href="kontakt.html" class="nav__mobile-link" role="menuitem">Kontakt</a>
+        <div style="display:flex;gap:var(--space-3);align-items:center;padding-top:var(--space-3);">
+          <button class="theme-toggle" aria-label="Farbschema wechseln">
+            <i data-lucide="moon" width="18" height="18"></i>
+            <i data-lucide="sun" width="18" height="18"></i>
+          </button>
+          <a href="kontakt.html" class="btn btn--primary nav__mobile-cta">Jetzt anfragen</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── PAGE HERO ─────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__inner">
+        <p class="hero__eyebrow" style="margin-bottom:var(--space-4);">
+          <i data-lucide="layers" width="14" height="14"></i>
+          Leistungen
+        </p>
+        <h1 class="page-hero__title" id="page-title">Unsere Leistungen</h1>
+        <p class="page-hero__subtitle">Von der kurzfristigen Notfallvertretung bis zur langfristigen Personalplanung – wir liefern geprüfte Pflegekräfte, wenn Sie sie brauchen.</p>
+      </div>
+    </section>
+
+    <!-- ── SERVICE CARDS ──────────────────────────────────── -->
+    <section id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Was wir anbieten</p>
+          <h2 class="section-header__title" id="services-title">Drei Kernleistungen</h2>
+          <p class="section-header__body">Flexibel, skalierbar und auf die Bedürfnisse sozialer Einrichtungen ausgerichtet.</p>
+        </div>
+
+        <div class="service-cards">
+          <!-- Featured -->
+          <article class="service-card service-card--featured">
+            <div style="margin-bottom:var(--space-4);">
+              <span class="badge badge--orange">
+                <i data-lucide="zap" width="12" height="12"></i>
+                Soforteinsatz
+              </span>
+            </div>
+            <div class="service-card__icon">
+              <i data-lucide="zap" width="24" height="24"></i>
+            </div>
+            <h3 class="service-card__title">Soforteinsatz</h3>
+            <p class="service-card__body">
+              Kurzfristiger Ausfall in Ihrer Einrichtung? Wir schicken Ihnen qualifiziertes Personal – oft noch am selben Tag, spätestens innerhalb von zwei Stunden nach Ihrer Anfrage.
+            </p>
+            <ul class="service-card__list" role="list">
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Diplomierte Gesundheits- und Krankenpfleger (DGKP)
+              </li>
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Pflegefachassistenz (PFA)
+              </li>
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Pflegeassistenz (PA)
+              </li>
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Reaktionszeit unter 2 Stunden
+              </li>
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Verfügbar auch am Wochenende &amp; Feiertagen
+              </li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div style="margin-bottom:var(--space-4);">
+              <span class="badge badge--navy">
+                <i data-lucide="calendar" width="12" height="12"></i>
+                Langzeitplanung
+              </span>
+            </div>
+            <div class="service-card__icon">
+              <i data-lucide="calendar-range" width="24" height="24"></i>
+            </div>
+            <h3 class="service-card__title">Langzeitplanung</h3>
+            <p class="service-card__body">
+              Bekannte Engpässe wie Urlaubsphasen, Elternkarenz oder Personalwechsel können vorausgeplant werden. Wir besetzen Stellen verlässlich und rechtzeitig.
+            </p>
+            <ul class="service-card__list" role="list">
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Planung ab einer Woche Vorlaufzeit
+              </li>
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Mehrmonatige Vertretungen möglich
+              </li>
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Feste Ansprechperson bei uns
+              </li>
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Kontinuität durch bekannte Fachkräfte
+              </li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div style="margin-bottom:var(--space-4);">
+              <span class="badge badge--green">
+                <i data-lucide="phone" width="12" height="12"></i>
+                24/7 Erreichbar
+              </span>
+            </div>
+            <div class="service-card__icon">
+              <i data-lucide="headphones" width="24" height="24"></i>
+            </div>
+            <h3 class="service-card__title">24/7 Erreichbarkeit</h3>
+            <p class="service-card__body">
+              Pflegebedarf kennt keine Öffnungszeiten. Unser Notfalltelefon ist rund um die Uhr besetzt – auch nachts, am Wochenende und an Feiertagen.
+            </p>
+            <ul class="service-card__list" role="list">
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Notfallhotline 24 Stunden verfügbar
+              </li>
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Direkte Rückrufe, kein Call-Center
+              </li>
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Sofortige Verfügbarkeitsprüfung
+              </li>
+              <li class="service-card__list-item">
+                <i data-lucide="check" width="16" height="16"></i>
+                Einsatzbestätigung innerhalb von 30 Minuten
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── QUALIFICATIONS ─────────────────────────────────── -->
+    <section class="qualifications" id="qualifikationen" aria-labelledby="qual-title">
+      <div class="qualifications__inner">
+        <h2 class="qualifications__title" id="qual-title">Verfügbare Qualifikationen</h2>
+        <p class="qualifications__subtitle">Alle Pflegekräfte in unserem Pool haben ihre Ausbildung nachgewiesen. Wir vermitteln ausschließlich verifiziertes Fachpersonal.</p>
+
+        <div class="qual-grid">
+          <div class="qual-item">
+            <span class="qual-item__abbr">DGKP</span>
+            <span class="qual-item__name">Dipl. Gesundheits- und Krankenpfleger/in</span>
+            <p class="qual-item__desc">Höchste Pflegequalifikation nach österreichischem Recht</p>
+          </div>
+          <div class="qual-item">
+            <span class="qual-item__abbr">PFA</span>
+            <span class="qual-item__name">Pflegefachassistenz</span>
+            <p class="qual-item__desc">2-jährige Ausbildung, erweiterte Pflegeaufgaben</p>
+          </div>
+          <div class="qual-item">
+            <span class="qual-item__abbr">PA</span>
+            <span class="qual-item__name">Pflegeassistenz</span>
+            <p class="qual-item__desc">1-jährige Ausbildung, grundlegende Pflegetätigkeiten</p>
+          </div>
+          <div class="qual-item">
+            <span class="qual-item__abbr">HH</span>
+            <span class="qual-item__name">Heimhilfe</span>
+            <p class="qual-item__desc">Unterstützung bei Alltagsaktivitäten im häuslichen Bereich</p>
+          </div>
+          <div class="qual-item">
+            <span class="qual-item__abbr">WH</span>
+            <span class="qual-item__name">Wundpflege (Spezialisierung)</span>
+            <p class="qual-item__desc">Zertifizierte Fachkräfte für Wundmanagement</p>
+          </div>
+          <div class="qual-item">
+            <span class="qual-item__abbr">GBP</span>
+            <span class="qual-item__name">Gerontopsychiatrische Betreuung</span>
+            <p class="qual-item__desc">Spezialisierung auf dementielle Erkrankungen</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROCESS DETAIL ─────────────────────────────────── -->
+    <section class="how-it-works section--alt" id="ablauf" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Wie es funktioniert</p>
+          <h2 class="section-header__title" id="process-title">Der Ablauf im Detail</h2>
+          <p class="section-header__body">Vom ersten Anruf bis zum Einsatz – transparent und ohne unnötige Schritte.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step step--detail">
+            <div class="step__number">01</div>
+            <h3 class="step__title">Bedarf melden</h3>
+            <p class="step__body">Telefonisch, per E-Mail oder über unser Kontaktformular. Wir brauchen: Qualifikation, gewünschter Starttermin, voraussichtliche Dauer und Einsatzort in Wien.</p>
+            <p class="step__detail">Bei Soforteinsätzen reicht ein Anruf – wir notieren alles Notwendige in unter zwei Minuten.</p>
+          </div>
+          <div class="step step--detail">
+            <div class="step__number">02</div>
+            <h3 class="step__title">Matching &amp; Vorschlag</h3>
+            <p class="step__body">Wir prüfen sofort, welche Fachkräfte mit der passenden Qualifikation verfügbar sind. Bei Soforteinsätzen erhalten Sie einen Vorschlag innerhalb von 30 Minuten.</p>
+            <p class="step__detail">Sie erhalten Name, Qualifikation und Berufserfahrung der vorgeschlagenen Person – bevor Sie zusagen.</p>
+          </div>
+          <div class="step step--detail">
+            <div class="step__number">03</div>
+            <h3 class="step__title">Freigabe &amp; Einsatz</h3>
+            <p class="step__body">Nach Ihrer Bestätigung ist der Einsatz fixiert. Die Pflegekraft erhält alle notwendigen Infos und tritt pünktlich an. Wir bleiben erreichbar für Rückfragen.</p>
+            <p class="step__detail">Nach dem Einsatz erhalten Sie eine klare Abrechnung – ohne Überraschungen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ────────────────────────────────────────────── -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Häufige Fragen</p>
+          <h2 class="section-header__title" id="faq-title">Fragen &amp; Antworten</h2>
+        </div>
+
+        <ul class="faq__list" role="list">
+          <li class="faq-item">
+            <button class="faq-item__trigger" aria-expanded="false">
+              <span class="faq-item__question">Wie schnell kann eine Pflegekraft starten?</span>
+              <i data-lucide="chevron-down" class="faq-item__icon" width="20" height="20"></i>
+            </button>
+            <div class="faq-item__panel" role="region">
+              <p class="faq-item__answer">Bei Soforteinsätzen schaffen wir es in der Regel innerhalb von zwei Stunden ab Ihrer Anfrage. Voraussetzung ist, dass eine passende Fachkraft verfügbar ist. Für die meisten gängigen Qualifikationen (DGKP, PFA, PA) ist das die Regel – insbesondere in Wien.</p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <button class="faq-item__trigger" aria-expanded="false">
+              <span class="faq-item__question">Wie werden die Qualifikationen überprüft?</span>
+              <i data-lucide="chevron-down" class="faq-item__icon" width="20" height="20"></i>
+            </button>
+            <div class="faq-item__panel" role="region">
+              <p class="faq-item__answer">Jede Pflegekraft legt uns ihren Abschluss und ihre Berufsurkunde vor, bevor sie in unseren Pool aufgenommen wird. Bei DGKP-Kräften prüfen wir zusätzlich die Eintragung ins Gesundheitsberuferegister (GBR). Wir geben diese Information bei der Anfrage weiter – Sie wissen immer, wen Sie bekommen.</p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <button class="faq-item__trigger" aria-expanded="false">
+              <span class="faq-item__question">In welchen Regionen sind Sie tätig?</span>
+              <i data-lucide="chevron-down" class="faq-item__icon" width="20" height="20"></i>
+            </button>
+            <div class="faq-item__panel" role="region">
+              <p class="faq-item__answer">Wir sind primär in Wien tätig – alle Bezirke, stationäre wie mobile Einrichtungen. Für Einsätze im unmittelbaren Wiener Umland (Niederösterreich bis ca. 30 km) sprechen Sie uns bitte direkt an – je nach Verfügbarkeit können wir auch dort unterstützen.</p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <button class="faq-item__trigger" aria-expanded="false">
+              <span class="faq-item__question">Wie funktioniert die Abrechnung?</span>
+              <i data-lucide="chevron-down" class="faq-item__icon" width="20" height="20"></i>
+            </button>
+            <div class="faq-item__panel" role="region">
+              <p class="faq-item__answer">Die Abrechnung erfolgt nach geleisteten Stunden, transparent und nachvollziehbar. Sie erhalten monatlich eine Sammelrechnung mit allen Einsätzen des Vormonats. Unsere Stundensätze staffeln sich nach Qualifikation und Dauer des Einsatzes – sprechen Sie uns für ein konkretes Angebot an.</p>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <button class="faq-item__trigger" aria-expanded="false">
+              <span class="faq-item__question">Was passiert, wenn eine Pflegekraft kurzfristig absagt?</span>
+              <i data-lucide="chevron-down" class="faq-item__icon" width="20" height="20"></i>
+            </button>
+            <div class="faq-item__panel" role="region">
+              <p class="faq-item__answer">Wir informieren Sie umgehend und suchen sofort nach einer Ersatzkraft. Unser Ziel ist es, Ausfälle innerhalb von einer Stunde zu kompensieren. Da wir immer mit mehreren verfügbaren Kandidatinnen und Kandidaten arbeiten, gelingt das in den meisten Fällen ohne Verzögerung für Ihren Betrieb.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── CTA BANNER ─────────────────────────────────────── -->
+    <section class="cta-banner" aria-labelledby="cta-title">
+      <div class="cta-banner__inner">
+        <h2 class="cta-banner__title" id="cta-title">Bereit für zuverlässige Verstärkung?</h2>
+        <p class="cta-banner__body">Nehmen Sie jetzt Kontakt auf – wir klären Ihren Bedarf direkt und unkompliziert. Kein langer Prozess, keine Wartezeit.</p>
+        <div class="cta-banner__actions">
+          <a href="kontakt.html" class="btn btn--primary btn--lg">
+            <i data-lucide="phone" width="18" height="18"></i>
+            Jetzt Kontakt aufnehmen
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Seitenfu&szlig;">
+    <div class="footer__inner">
+      <div>
+        <a href="index.html" class="footer__logo">Pflege<span>Direkt</span></a>
+        <p class="footer__tagline">Geprüfte Pflegekräfte für soziale Einrichtungen in Wien. Schnell, zuverlässig, professionell.</p>
+      </div>
+
+      <nav aria-label="Footer Navigation">
+        <p class="footer__heading">Navigation</p>
+        <ul class="footer__links" role="list">
+          <li><a href="index.html" class="footer__link">Startseite</a></li>
+          <li><a href="ueber-uns.html" class="footer__link">Über uns</a></li>
+          <li><a href="leistungen.html" class="footer__link">Leistungen</a></li>
+          <li><a href="kontakt.html" class="footer__link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer__heading">Kontakt</p>
+        <div class="footer__contact-item">
+          <i data-lucide="map-pin" width="16" height="16"></i>
+          <span>Mariahilfer Straße 44, 1070 Wien</span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="phone" width="16" height="16"></i>
+          <span>+43 1 234 56 78</span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="mail" width="16" height="16"></i>
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d0bfb6b6b9b3b590a0b6bcb5b7b5fdb4b9a2b5bba4feb1a4">[email&#160;protected]</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="clock" width="16" height="16"></i>
+          <span>Mo–Fr 8–18 Uhr · Notfall: 24/7</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2025 Pflege Direkt GmbH · Wien · Alle Rechte vorbehalten</p>
+      <p class="footer__copyright">Impressum · Datenschutz</p>
+    </div>
+  </footer>
+
+ 

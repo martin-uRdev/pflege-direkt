@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="de">
+<script>!function(){var t=localStorage.getItem("pflege-direkt-theme")||"light";document.documentElement.setAttribute("data-theme",t)}();</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pflege Direkt – Geprüfte Pflegekräfte für soziale Einrichtungen in Wien. DGKP, PFA, PA – Einsatz in 2 Stunden möglich." />
+  <title>Pflege Direkt – Qualifizierte Pflegekräfte in Wien</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <header>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">Pflege<span>Direkt</span></a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link nav__link--active">Startseite</a></li>
+          <li><a href="ueber-uns.html" class="nav__link">Über uns</a></li>
+          <li><a href="leistungen.html" class="nav__link">Leistungen</a></li>
+          <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <button class="theme-toggle nav__desktop-cta" aria-label="Farbschema wechseln">
+            <i data-lucide="moon" width="18" height="18"></i>
+            <i data-lucide="sun" width="18" height="18"></i>
+          </button>
+          <a href="kontakt.html" class="btn btn--primary nav__desktop-cta">Jetzt anfragen</a>
+          <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+            <i data-lucide="menu" width="22" height="22"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="nav__mobile" role="menu">
+        <a href="index.html" class="nav__mobile-link" role="menuitem">Startseite</a>
+        <a href="ueber-uns.html" class="nav__mobile-link" role="menuitem">Über uns</a>
+        <a href="leistungen.html" class="nav__mobile-link" role="menuitem">Leistungen</a>
+        <a href="kontakt.html" class="nav__mobile-link" role="menuitem">Kontakt</a>
+        <div style="display:flex;gap:var(--space-3);align-items:center;padding-top:var(--space-3);">
+          <button class="theme-toggle" aria-label="Farbschema wechseln">
+            <i data-lucide="moon" width="18" height="18"></i>
+            <i data-lucide="sun" width="18" height="18"></i>
+          </button>
+          <a href="kontakt.html" class="btn btn--primary nav__mobile-cta">Jetzt anfragen</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ──────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">
+          <i data-lucide="map-pin" width="14" height="14"></i>
+          Wien &amp; Umgebung
+        </p>
+        <h1 class="hero__title" id="hero-title">
+          Günstig. Zuverlässig. <span>Qualifiziert.</span>
+        </h1>
+        <p class="hero__subtitle">
+          Wir vermitteln geprüfte Pflegekräfte – DGKP, PFA und PA – an Krankenhäuser, Pflegeheime und mobile Dienste in Wien. Einsatz oft noch am selben Tag.
+        </p>
+        <div class="hero__actions">
+          <a href="kontakt.html" class="btn btn--primary btn--lg">
+            <i data-lucide="phone" width="18" height="18"></i>
+            Jetzt Kontakt aufnehmen
+          </a>
+          <a href="leistungen.html" class="btn btn--secondary-light btn--lg">
+            Leistungen entdecken
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div>
+            <span class="hero__stat-value">2 Std.</span>
+            <p class="hero__stat-label">Reaktionszeit bei Soforteinsatz</p>
+          </div>
+          <div>
+            <span class="hero__stat-value">100%</span>
+            <p class="hero__stat-label">Geprüfte Qualifikationen</p>
+          </div>
+          <div>
+            <span class="hero__stat-value">24/7</span>
+            <p class="hero__stat-label">Erreichbarkeit für Notfälle</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TRUST BAR ──────────────────────────────────────── -->
+    <div class="trust-bar" role="complementary" aria-label="Vertrauenssignale">
+      <div class="trust-bar__inner">
+        <div class="trust-bar__item">
+          <i data-lucide="map-pin" width="16" height="16"></i>
+          Wien &amp; Umgebung
+        </div>
+        <div class="trust-bar__item">
+          <i data-lucide="shield-check" width="16" height="16"></i>
+          DGKP · PFA · PA
+        </div>
+        <div class="trust-bar__item">
+          <i data-lucide="zap" width="16" height="16"></i>
+          Einsatz in 2 Stunden
+        </div>
+        <div class="trust-bar__item">
+          <i data-lucide="check-circle-2" width="16" height="16"></i>
+          Geprüfte Fachkräfte
+        </div>
+        <div class="trust-bar__item">
+          <i data-lucide="phone" width="16" height="16"></i>
+          24/7 Erreichbar
+        </div>
+      </div>
+    </div>
+
+    <!-- ── VALUE PROPOSITION ─────────────────────────────── -->
+    <section class="value-prop" id="leistungen-preview" aria-labelledby="value-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Warum Pflege Direkt</p>
+          <h2 class="section-header__title" id="value-title">Was uns auszeichnet</h2>
+          <p class="section-header__body">Drei Gründe, warum soziale Einrichtungen in Wien auf uns setzen – wenn es darauf ankommt.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="value-card">
+            <div class="value-card__icon">
+              <i data-lucide="zap" width="22" height="22"></i>
+            </div>
+            <h3 class="value-card__title">Soforteinsatz möglich</h3>
+            <p class="value-card__body">Bei kurzfristigen Ausfällen reagieren wir innerhalb von zwei Stunden. Qualifiziertes Personal steht bereit – auch am Wochenende und an Feiertagen.</p>
+          </article>
+
+          <article class="value-card">
+            <div class="value-card__icon">
+              <i data-lucide="badge-check" width="22" height="22"></i>
+            </div>
+            <h3 class="value-card__title">Geprüfte Qualifikationen</h3>
+            <p class="value-card__body">Jede Pflegekraft wird von uns auf ihre Ausbildung und Berufserfahrung überprüft. Keine ungeprüften Profile – nur verifiziertes Fachpersonal.</p>
+          </article>
+
+          <article class="value-card">
+            <div class="value-card__icon">
+              <i data-lucide="repeat" width="22" height="22"></i>
+            </div>
+            <h3 class="value-card__title">Verlässliche Planung</h3>
+            <p class="value-card__body">Neben Soforteinsätzen unterstützen wir auch bei mittel- und langfristiger Personalplanung. Damit Ihre Einrichtung stabil und planbar bleibt.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ───────────────────────────────────── -->
+    <section class="how-it-works section--alt" id="so-funktionierts" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Der Ablauf</p>
+          <h2 class="section-header__title" id="process-title">In drei Schritten zum Personal</h2>
+          <p class="section-header__body">Kein komplizierter Prozess. Wir sind darauf ausgelegt, schnell und unkompliziert zu liefern.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__number">01</div>
+            <h3 class="step__title">Bedarf melden</h3>
+            <p class="step__body">Sie kontaktieren uns telefonisch oder über das Formular – mit Angabe der benötigten Qualifikation, der Einsatzdauer und dem Starttermin.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">02</div>
+            <h3 class="step__title">Passende Kraft finden</h3>
+            <p class="step__body">Wir prüfen unseren Pool an verfügbaren Fachkräften und schlagen Ihnen innerhalb kürzester Zeit geeignete Kandidatinnen und Kandidaten vor.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">03</div>
+            <h3 class="step__title">Einsatz bestätigen</h3>
+            <p class="step__body">Nach Ihrer Freigabe ist der Einsatz fix. Die Pflegekraft tritt zum vereinbarten Zeitpunkt ihren Dienst an – Sie können sich auf uns verlassen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIALS ───────────────────────────────────── -->
+    <section class="testimonials" id="referenzen" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Stimmen aus der Praxis</p>
+          <h2 class="section-header__title" id="testimonials-title">Was unsere Kunden sagen</h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">Wir hatten einen krankheitsbedingten Ausfall auf einer Wohngruppe. Pflege Direkt hat uns innerhalb von 90 Minuten eine DGKP geschickt. Seitdem arbeiten wir regelmäßig zusammen.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">MH</div>
+              <div>
+                <span class="testimonial-card__name">Mag. Maria Huber</span>
+                <span class="testimonial-card__role">Pflegedienstleiterin, Seniorenheim Favoriten</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">Was mich überzeugt hat: Alle Pflegekräfte, die zu uns kamen, waren tatsächlich qualifiziert. Keine Überraschungen, keine Nachfragen – einfach verlässlich.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">TW</div>
+              <div>
+                <span class="testimonial-card__name">Thomas Weber</span>
+                <span class="testimonial-card__role">Geschäftsführer, Mobiler Pflegedienst Wien-Nord</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">Wir nutzen Pflege Direkt jetzt auch für mittelfristige Planungslücken – nicht nur für Notfälle. Der Ablauf ist klar und das Team reagiert immer schnell.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">AK</div>
+              <div>
+                <span class="testimonial-card__name">Andrea Kraus</span>
+                <span class="testimonial-card__role">Stationsleitung, Privatklinik Wien-West</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA BANNER ─────────────────────────────────────── -->
+    <section class="cta-banner" aria-labelledby="cta-title">
+      <div class="cta-banner__inner">
+        <h2 class="cta-banner__title" id="cta-title">Personallücke? Wir helfen schnell.</h2>
+        <p class="cta-banner__body">Ob kurzfristiger Notfall oder mittelfristiger Bedarf – sprechen Sie uns an. Wir vermitteln geprüfte Pflegekräfte in Wien und Umgebung.</p>
+        <div class="cta-banner__actions">
+          <a href="kontakt.html" class="btn btn--primary btn--lg">
+            <i data-lucide="phone" width="18" height="18"></i>
+            Jetzt Kontakt aufnehmen
+          </a>
+          <a href="leistungen.html" class="btn btn--secondary-light">
+            Alle Leistungen ansehen
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Seitenfu&szlig;">
+    <div class="footer__inner">
+      <div>
+        <a href="index.html" class="footer__logo">Pflege<span>Direkt</span></a>
+        <p class="footer__tagline">Geprüfte Pflegekräfte für soziale Einrichtungen in Wien. Schnell, zuverlässig, professionell.</p>
+      </div>
+
+      <nav aria-label="Footer Navigation">
+        <p class="footer__heading">Navigation</p>
+        <ul class="footer__links" role="list">
+          <li><a href="index.html" class="footer__link">Startseite</a></li>
+          <li><a href="ueber-uns.html" class="footer__link">Über uns</a></li>
+          <li><a href="leistungen.html" class="footer__link">Leistungen</a></li>
+          <li><a href="kontakt.html" class="footer__link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer__heading">Kontakt</p>
+        <div class="footer__contact-item">
+          <i data-lucide="map-pin" width="16" height="16"></i>
+          <span>Mariahilfer Straße 44, 1070 Wien</span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="phone" width="16" height="16"></i>
+          <span>+43 1 234 56 78</span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="mail" width="16" height="16"></i>
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="076861616e64624777616b6260622a636e75626c73296673">[email&#160;protected]</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="clock" width="16" height="16"></i>
+          <span>Mo–Fr 8–18 Uhr · Notfall: 24/7</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2025 Pflege Direkt GmbH · Wien · Alle Rechte vorbehalten</p>
+      <p class="footer__copyright">Impressum · Datenschutz</p>
+    </div>
+  </footer>
+
+ 

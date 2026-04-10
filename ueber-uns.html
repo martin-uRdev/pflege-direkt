@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<script>!function(){var t=localStorage.getItem("pflege-direkt-theme")||"light";document.documentElement.setAttribute("data-theme",t)}();</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pflege Direkt – Über uns. Zuverlässige Personalvermittlung für Pflegekräfte in Wien seit 2018." />
+  <title>Über uns – Pflege Direkt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <header>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">Pflege<span>Direkt</span></a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Startseite</a></li>
+          <li><a href="ueber-uns.html" class="nav__link nav__link--active">Über uns</a></li>
+          <li><a href="leistungen.html" class="nav__link">Leistungen</a></li>
+          <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <button class="theme-toggle nav__desktop-cta" aria-label="Farbschema wechseln">
+            <i data-lucide="moon" width="18" height="18"></i>
+            <i data-lucide="sun" width="18" height="18"></i>
+          </button>
+          <a href="kontakt.html" class="btn btn--primary nav__desktop-cta">Jetzt anfragen</a>
+          <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+            <i data-lucide="menu" width="22" height="22"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="nav__mobile" role="menu">
+        <a href="index.html" class="nav__mobile-link" role="menuitem">Startseite</a>
+        <a href="ueber-uns.html" class="nav__mobile-link" role="menuitem">Über uns</a>
+        <a href="leistungen.html" class="nav__mobile-link" role="menuitem">Leistungen</a>
+        <a href="kontakt.html" class="nav__mobile-link" role="menuitem">Kontakt</a>
+        <div style="display:flex;gap:var(--space-3);align-items:center;padding-top:var(--space-3);">
+          <button class="theme-toggle" aria-label="Farbschema wechseln">
+            <i data-lucide="moon" width="18" height="18"></i>
+            <i data-lucide="sun" width="18" height="18"></i>
+          </button>
+          <a href="kontakt.html" class="btn btn--primary nav__mobile-cta">Jetzt anfragen</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── PAGE HERO ─────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__inner">
+        <p class="hero__eyebrow" style="margin-bottom:var(--space-4);">
+          <i data-lucide="info" width="14" height="14"></i>
+          Über uns
+        </p>
+        <h1 class="page-hero__title" id="page-title">Über Pflege Direkt</h1>
+        <p class="page-hero__subtitle">Wir helfen sozialen Einrichtungen, personelle Engpässe schnell und zuverlässig zu überbrücken — mit geprüften Pflegekräften aus Wien.</p>
+      </div>
+    </section>
+
+    <!-- ── MISSION BLOCK ──────────────────────────────────── -->
+    <section class="mission" id="mission" aria-labelledby="mission-title">
+      <div class="container">
+        <div class="grid-2" style="align-items:start;">
+          <div>
+            <p class="section-header__eyebrow" style="text-align:left;margin-bottom:var(--space-4);">Unsere Mission</p>
+            <blockquote class="mission__quote" id="mission-title">
+              „Wir helfen sozialen Einrichtungen, personelle Engpässe schnell und zuverlässig zu überbrücken — mit geprüften Pflegekräften aus Wien."
+            </blockquote>
+            <a href="kontakt.html" class="btn btn--primary" style="margin-top:var(--space-4);">
+              <i data-lucide="arrow-right" width="16" height="16"></i>
+              Gespräch anfragen
+            </a>
+          </div>
+
+          <div>
+            <p class="mission__text">
+              Pflege Direkt wurde 2018 in Wien gegründet – aus dem Verständnis heraus, dass Pflegeeinrichtungen bei Personalausfällen oft allein gelassen werden. Krankenstände, Urlaubsvertretungen und unerwartete Mehrbedarfe entstehen kurzfristig. Die Suche nach qualifiziertem Personal dauert oft zu lange.
+            </p>
+            <p class="mission__text">
+              Unser Ansatz ist klar: Wir halten einen geprüften Pool an Pflegekräften bereit und sind rund um die Uhr erreichbar. Wenn Sie anrufen, haben wir eine Antwort – nicht erst in drei Tagen.
+            </p>
+            <p class="mission__text">
+              Wir arbeiten ausschließlich mit Fachkräften, die ihre Ausbildung nachgewiesen haben und deren Qualifikationen wir kennen. Keine Überraschungen für Ihre Einrichtung – nur verlässliche Unterstützung, wenn Sie sie brauchen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VALUES ─────────────────────────────────────────── -->
+    <section class="section--alt" id="werte" aria-labelledby="values-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Unsere Werte</p>
+          <h2 class="section-header__title" id="values-title">Wofür wir stehen</h2>
+          <p class="section-header__body">Drei Grundsätze, die unsere Arbeit täglich leiten – und an denen wir uns messen lassen.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="value-card">
+            <div class="value-card__icon">
+              <i data-lucide="anchor" width="22" height="22"></i>
+            </div>
+            <h3 class="value-card__title">Verlässlichkeit</h3>
+            <p class="value-card__body">Wenn wir eine Pflegekraft zusagen, erscheint sie auch. Wir kommunizieren klar, halten Zusagen ein und melden uns proaktiv – auch wenn es Probleme gibt.</p>
+          </article>
+
+          <article class="value-card">
+            <div class="value-card__icon">
+              <i data-lucide="eye" width="22" height="22"></i>
+            </div>
+            <h3 class="value-card__title">Transparenz</h3>
+            <p class="value-card__body">Unsere Konditionen, die Qualifikationen der Pflegekräfte und der Ablauf sind klar und nachvollziehbar. Keine versteckten Kosten, keine unklaren Profile.</p>
+          </article>
+
+          <article class="value-card">
+            <div class="value-card__icon">
+              <i data-lucide="graduation-cap" width="22" height="22"></i>
+            </div>
+            <h3 class="value-card__title">Fachkompetenz</h3>
+            <p class="value-card__body">Wir vermitteln ausschließlich Pflegekräfte mit geprüften Qualifikationen. DGKP, PFA und PA sind bei uns keine Selbstangaben – sondern verifikate Berufsbezeichnungen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TEAM ───────────────────────────────────────────── -->
+    <section id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Unser Team</p>
+          <h2 class="section-header__title" id="team-title">Die Menschen hinter Pflege Direkt</h2>
+          <p class="section-header__body">Ein kleines Team mit klarem Fokus: schnelle, verlässliche Personalvermittlung für die Pflege in Wien.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="team-card">
+            <div class="team-card__avatar">SK</div>
+            <h3 class="team-card__name">Stefan Kern</h3>
+            <span class="team-card__role">Geschäftsführer</span>
+            <p class="team-card__bio">Stefan gründete Pflege Direkt nach zehn Jahren im Krankenhausmanagement – mit dem Ziel, den Zugang zu Pflegepersonal für Einrichtungen aller Größen zu vereinfachen.</p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-card__avatar">BF</div>
+            <h3 class="team-card__name">Barbara Fuchs</h3>
+            <span class="team-card__role">Operations &amp; Koordination</span>
+            <p class="team-card__bio">Barbara koordiniert täglich Einsätze und Anfragen. Als diplomierte Krankenschwester kennt sie die Anforderungen aus der Praxis – und weiß, worauf es ankommt.</p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-card__avatar">MR</div>
+            <h3 class="team-card__name">Michael Reiter</h3>
+            <span class="team-card__role">Recruiting &amp; Qualitätssicherung</span>
+            <p class="team-card__bio">Michael verantwortet die Aufnahme neuer Pflegekräfte in unseren Pool – inklusive Qualifikationsprüfung, Referenzgesprächen und laufender Betreuung.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA BANNER ─────────────────────────────────────── -->
+    <section class="cta-banner" aria-labelledby="cta-title">
+      <div class="cta-banner__inner">
+        <h2 class="cta-banner__title" id="cta-title">Lernen Sie uns kennen.</h2>
+        <p class="cta-banner__body">Ein kurzes Gespräch genügt, um zu klären, wie wir Ihrer Einrichtung helfen können – unverbindlich und ohne Verpflichtung.</p>
+        <div class="cta-banner__actions">
+          <a href="kontakt.html" class="btn btn--primary btn--lg">
+            <i data-lucide="phone" width="18" height="18"></i>
+            Jetzt Kontakt aufnehmen
+          </a>
+          <a href="leistungen.html" class="btn btn--secondary-light">
+            Unsere Leistungen
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Seitenfu&szlig;">
+    <div class="footer__inner">
+      <div>
+        <a href="index.html" class="footer__logo">Pflege<span>Direkt</span></a>
+        <p class="footer__tagline">Geprüfte Pflegekräfte für soziale Einrichtungen in Wien. Schnell, zuverlässig, professionell.</p>
+      </div>
+
+      <nav aria-label="Footer Navigation">
+        <p class="footer__heading">Navigation</p>
+        <ul class="footer__links" role="list">
+          <li><a href="index.html" class="footer__link">Startseite</a></li>
+          <li><a href="ueber-uns.html" class="footer__link">Über uns</a></li>
+          <li><a href="leistungen.html" class="footer__link">Leistungen</a></li>
+          <li><a href="kontakt.html" class="footer__link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer__heading">Kontakt</p>
+        <div class="footer__contact-item">
+          <i data-lucide="map-pin" width="16" height="16"></i>
+          <span>Mariahilfer Straße 44, 1070 Wien</span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="phone" width="16" height="16"></i>
+          <span>+43 1 234 56 78</span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="mail" width="16" height="16"></i>
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="701f16161913153000161c1517155d141902151b045e1104">[email&#160;protected]</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i data-lucide="clock" width="16" height="16"></i>
+          <span>Mo–Fr 8–18 Uhr · Notfall: 24/7</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2025 Pflege Direkt GmbH · Wien · Alle Rechte vorbehalten</p>
+      <p class="footer__copyright">Impressum · Datenschutz</p>
+    </div>
+  </footer>
+
+ 
