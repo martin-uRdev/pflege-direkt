@@ -585,8 +585,12 @@ section[id] {
 
 /* === PAGE HERO (shorter) === */
 .page-hero {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-bg);
   padding: var(--space-16) var(--space-6);
+}
+
+[data-theme="dark"] .page-hero {
+  background-color: var(--clr-primary);
 }
 
 .page-hero__inner {
@@ -596,13 +600,13 @@ section[id] {
 
 .page-hero__title {
   font-size: var(--h1);
-  color: var(--clr-white);
+  color: var(--clr-heading);
   margin-bottom: var(--space-4);
 }
 
 .page-hero__subtitle {
   font-size: var(--text-l);
-  color: rgba(255,255,255,0.75);
+  color: var(--clr-text-muted);
   max-width: 55ch;
 }
 
