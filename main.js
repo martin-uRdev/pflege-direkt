@@ -37,8 +37,6 @@
     applyTheme(current === 'dark' ? 'light' : 'dark');
   }
 
-  initTheme();
-
   document.addEventListener('DOMContentLoaded', function () {
 
     /* ─── THEME TOGGLE BUTTONS ────────────────────────────── */
@@ -107,7 +105,9 @@
         let valid = true;
 
         required.forEach(function (field) {
-          if (!field.value.trim()) {
+          var empty = !field.value.trim();
+          var invalidEmail = field.type === 'email' && field.value.trim() && !field.validity.valid;
+          if (empty || invalidEmail) {
             field.style.borderColor = '#dc3545';
             valid = false;
           } else {
