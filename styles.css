@@ -586,9 +586,7 @@ section[id] {
   .hero__inner {
     grid-template-columns: 1fr;
   }
-  .hero__image {
-    order: -1;
-  }
+
   .hero {
     min-height: auto;
     padding-block: var(--space-12);
