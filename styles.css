@@ -576,6 +576,23 @@ section[id] {
   max-width: var(--max-w);
   margin-inline: auto;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+@media (width <= 768px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+  .hero__image {
+    order: -1;
+  }
+  .hero {
+    min-height: auto;
+    padding-block: var(--space-12);
+  }
 }
 
 .hero__eyebrow {
@@ -626,7 +643,6 @@ section[id] {
   margin-top: var(--space-16);
   padding-top: var(--space-8);
   border-top: 1px solid var(--divider);
-  justify-content: center;
 }
 
 .hero__stats > div {
@@ -646,6 +662,20 @@ section[id] {
   font-size: var(--text-s);
   color: var(--clr-text-muted);
   margin-top: var(--space-1);
+}
+
+.hero__image {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  box-shadow: var(--shadow-l);
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* === PAGE HERO (shorter) === */
@@ -1074,6 +1104,16 @@ section[id] {
   max-width: none;
 }
 
+.mission__image {
+  width: 100%;
+  border-radius: var(--radius-l);
+  margin-bottom: var(--space-6);
+  display: block;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* === TEAM CARDS === */
 .team-card {
   background: var(--clr-surface);
@@ -1089,23 +1129,20 @@ section[id] {
   transform: translateY(-2px);
 }
 
-.team-card__avatar {
-  width: 5rem;
-  height: 5rem;
-  border-radius: var(--radius-full);
-  background: var(--clr-bg-alt);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--ff-heading);
-  font-weight: 700;
-  font-size: var(--text-xl);
-  color: var(--clr-primary);
-  margin-inline: auto;
-  margin-bottom: var(--space-4);
+.team-card__photo {
+  margin: calc(-1 * var(--space-6)) calc(-1 * var(--space-6)) var(--space-5);
+  border-radius: var(--radius-l) var(--radius-l) 0 0;
+  overflow: hidden;
+  aspect-ratio: 3/4;
 }
 
-[data-theme="dark"] .team-card__avatar { color: var(--clr-heading); }
+.team-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
 
 .team-card__name {
   font-family: var(--ff-heading);
