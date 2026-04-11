@@ -579,7 +579,7 @@ section[id] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-12);
-  align-items: center;
+  align-items: flex-start;
 }
 
 @media (width <= 768px) {
@@ -1102,6 +1102,13 @@ section[id] {
   line-height: 1.75;
   margin-bottom: var(--space-4);
   max-width: none;
+}
+
+@media (width >= 1024px) {
+  .mission__sticky {
+    position: sticky;
+    top: 2rem;
+  }
 }
 
 .mission__image {
