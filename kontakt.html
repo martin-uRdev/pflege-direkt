@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <script>!function(){var t=localStorage.getItem("pflege-direkt-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
   <meta charset="UTF-8" />
+  <script>try{var t=localStorage.getItem("pflege-direkt-theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Pflege Direkt – Kontakt. Jetzt qualifizierte Pflegekräfte für Ihre Einrichtung in Wien anfragen." />
   <title>Kontakt – Pflege Direkt</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -34,11 +35,11 @@
         </div>
       </div>
 
-      <div class="nav__mobile" role="menu">
-        <a href="index.html" class="nav__mobile-link" role="menuitem">Startseite</a>
-        <a href="ueber-uns.html" class="nav__mobile-link" role="menuitem">Über uns</a>
-        <a href="leistungen.html" class="nav__mobile-link" role="menuitem">Leistungen</a>
-        <a href="kontakt.html" class="nav__mobile-link" role="menuitem">Kontakt</a>
+      <div class="nav__mobile">
+        <a href="index.html" class="nav__mobile-link">Startseite</a>
+        <a href="ueber-uns.html" class="nav__mobile-link">Über uns</a>
+        <a href="leistungen.html" class="nav__mobile-link">Leistungen</a>
+        <a href="kontakt.html" class="nav__mobile-link">Kontakt</a>
         <a href="kontakt.html" class="btn btn--primary nav__mobile-cta">Jetzt anfragen</a>
       </div>
     </nav>
@@ -296,11 +297,11 @@
         </div>
         <div class="footer__contact-item">
           <i data-lucide="phone" width="16" height="16"></i>
-          <span>+43 1 234 56 78</span>
+          <a href="tel:+4312345678" class="footer__link">+43 1 234 56 78</a>
         </div>
         <div class="footer__contact-item">
           <i data-lucide="mail" width="16" height="16"></i>
-          <a href="mailto:office@pflege-direkt.at">office@pflege-direkt.at</a>
+          <a href="mailto:office@pflege-direkt.at" class="footer__link">office@pflege-direkt.at</a>
         </div>
         <div class="footer__contact-item">
           <i data-lucide="clock" width="16" height="16"></i>
@@ -319,7 +320,7 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="https://unpkg.com/lucide@0.475.0/dist/umd/lucide.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

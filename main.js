@@ -132,6 +132,11 @@
       });
     }
 
+    /* ─── COPYRIGHT YEAR ─────────────────────────────────── */
+    document.querySelectorAll('.footer__copyright').forEach(function (el) {
+      el.innerHTML = el.innerHTML.replace(/\d{4}(?= Pflege)/, new Date().getFullYear());
+    });
+
     /* ─── LUCIDE ICONS ────────────────────────────────────── */
     if (window.lucide) {
       window.lucide.createIcons();
