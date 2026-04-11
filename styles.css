@@ -643,6 +643,7 @@ section[id] {
   margin-top: var(--space-16);
   padding-top: var(--space-8);
   border-top: 1px solid var(--divider);
+  justify-content: center;
 }
 
 .hero__stats > div {
