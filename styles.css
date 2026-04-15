@@ -667,6 +667,7 @@ section[id] {
 }
 
 .hero__title {
+  font-family: var(--ff-heading);
   font-size: var(--h1);
   font-weight: 700;
   color: var(--clr-heading);
@@ -755,6 +756,8 @@ section[id] {
 }
 
 .page-hero__title {
+  font-family: var(--ff-heading);
+  font-weight: 700;
   font-size: var(--h1);
   color: var(--clr-heading);
   margin-bottom: var(--space-4);
