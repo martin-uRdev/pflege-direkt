@@ -1110,7 +1110,7 @@ section[id] {
   transition: color var(--transition-fast);
 }
 
-.footer__link:hover { color: var(--clr-white); }
+.footer__link:hover { color: var(--clr-accent); }
 
 .footer__contact-item {
   display: flex;
@@ -1304,6 +1304,40 @@ section[id] {
   font-size: var(--text-s);
   color: var(--clr-on-primary-text);
   max-width: none;
+}
+
+.qual-group-label {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clr-on-primary-muted);
+  margin-bottom: var(--space-4);
+}
+
+.qual-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.qual-spec-chip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: var(--clr-on-primary-surface);
+  border: 1px solid var(--clr-on-primary-border);
+  border-radius: var(--radius-full);
+  font-size: var(--text-s);
+  color: var(--clr-on-primary-text);
+}
+
+.qual-spec-chip__abbr {
+  font-family: var(--ff-heading);
+  font-weight: 700;
+  color: var(--clr-accent);
 }
 
 /* === SERVICE CARDS === */
@@ -1596,21 +1630,6 @@ section[id] {
   margin-bottom: var(--space-1);
 }
 
-/* === MAP PLACEHOLDER === */
-.map-placeholder {
-  background: var(--clr-bg-alt);
-  border: 1px solid var(--divider);
-  border-radius: var(--radius-l);
-  height: 12rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: var(--space-3);
-  color: var(--clr-text-muted);
-}
-
-.map-placeholder [data-lucide] { color: var(--clr-accent); }
 
 /* === URGENCY STRIP === */
 .urgency-strip {
