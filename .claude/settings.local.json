@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cwebp -version)",
+      "Bash(magick -version)",
+      "Bash(ffmpeg -version)",
+      "Bash(python3 -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "Bash(python -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "Bash(node -e \"require\\('sharp'\\)\")",
+      "Bash(npm list:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -c \"from PIL import Image; print\\('pillow installed'\\)\")",
+      "Bash(pip install:*)",
+      "Bash(python -c \"from PIL import Image; print\\('pillow installed'\\)\")",
+      "Bash(winget list:*)",
+      "Bash(where python:*)",
+      "Bash(where python3:*)",
+      "Bash(where node:*)",
+      "Bash(/c/Users/Martin/AppData/Local/Microsoft/WindowsApps/python.exe --version)",
+      "Bash(/c/Users/Martin/AppData/Local/Microsoft/WindowsApps/python.exe -c \"from PIL import Image; print\\('pillow ok'\\)\")"
+    ]
+  }
+}
