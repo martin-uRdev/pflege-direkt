@@ -291,18 +291,17 @@ section[id] {
 }
 
 .nav__logo {
-  font-family: var(--ff-heading);
-  font-size: var(--text-xl);
-  font-weight: 700;
-  color: var(--clr-white);
-  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
   transition: opacity var(--transition-fast);
 }
 
-.nav__logo:hover { opacity: 0.85; color: var(--clr-white); }
+.nav__logo:hover { opacity: 0.85; }
 
-.nav__logo span {
-  color: var(--clr-accent);
+.nav__logo img {
+  height: 2rem;
+  width: auto;
+  display: block;
 }
 
 .nav__links {
@@ -1066,16 +1065,19 @@ section[id] {
 }
 
 .footer__logo {
-  font-family: var(--ff-heading);
-  font-size: var(--text-xl);
-  font-weight: 700;
-  color: var(--clr-white);
-  display: block;
+  display: inline-flex;
+  align-items: center;
   margin-bottom: var(--space-3);
-  text-decoration: none;
+  transition: opacity var(--transition-fast);
 }
 
-.footer__logo span { color: var(--clr-accent); }
+.footer__logo:hover { opacity: 0.85; }
+
+.footer__logo img {
+  height: 1.75rem;
+  width: auto;
+  display: block;
+}
 
 .footer__tagline {
   font-size: var(--text-s);
