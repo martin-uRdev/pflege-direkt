@@ -1334,10 +1334,9 @@ section[id] {
   color: var(--clr-on-primary-text);
 }
 
-.qual-spec-chip__abbr {
-  font-family: var(--ff-heading);
-  font-weight: 700;
+.qual-spec-chip [data-lucide] {
   color: var(--clr-accent);
+  flex-shrink: 0;
 }
 
 /* === SERVICE CARDS === */
