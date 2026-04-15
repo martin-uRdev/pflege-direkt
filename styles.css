@@ -680,6 +680,8 @@ section[id] {
 }
 
 .hero__subtitle {
+  font-family: var(--ff-body);
+  font-weight: 400;
   font-size: var(--text-l);
   color: var(--clr-text-muted);
   max-width: 52ch;
@@ -759,6 +761,8 @@ section[id] {
 }
 
 .page-hero__subtitle {
+  font-family: var(--ff-body);
+  font-weight: 400;
   font-size: var(--text-l);
   color: var(--clr-text-muted);
   max-width: 55ch;
