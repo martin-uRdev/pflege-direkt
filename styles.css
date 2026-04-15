@@ -278,7 +278,6 @@ section[id] {
   top: 0;
   z-index: 100;
   background-color: var(--clr-primary);
-  box-shadow: var(--shadow-m);
 }
 
 .nav__inner {
@@ -566,7 +565,7 @@ section[id] {
   font-size: var(--text-m);
   color: var(--clr-text-muted);
   max-width: none;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .card__badge {
@@ -896,7 +895,7 @@ section[id] {
 .value-card__body {
   font-size: var(--text-m);
   color: var(--clr-text-muted);
-  line-height: 1.7;
+  line-height: 1.6;
   max-width: none;
 }
 
@@ -940,7 +939,7 @@ section[id] {
 .step__body {
   font-size: var(--text-m);
   color: var(--clr-text-muted);
-  line-height: 1.7;
+  line-height: 1.6;
   max-width: none;
 }
 
@@ -1160,7 +1159,7 @@ section[id] {
 .mission__text {
   font-size: var(--text-m);
   color: var(--clr-text);
-  line-height: 1.75;
+  line-height: 1.65;
   margin-bottom: var(--space-4);
   max-width: none;
 }
@@ -1352,7 +1351,7 @@ section[id] {
 .service-card__body {
   font-size: var(--text-m);
   color: var(--clr-text-muted);
-  line-height: 1.7;
+  line-height: 1.6;
   margin-bottom: var(--space-5);
   max-width: none;
 }
@@ -1438,7 +1437,7 @@ section[id] {
 .faq-item__answer {
   font-size: var(--text-m);
   color: var(--clr-text-muted);
-  line-height: 1.75;
+  line-height: 1.65;
   padding-top: var(--space-4);
   max-width: none;
 }
@@ -1667,7 +1666,7 @@ section[id] {
 .step--detail .step__detail {
   font-size: var(--text-s);
   color: var(--clr-text-muted);
-  line-height: 1.7;
+  line-height: 1.6;
   margin-top: var(--space-3);
   max-width: none;
 }
